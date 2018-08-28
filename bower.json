@@ -1,0 +1,25 @@
+{
+  "name": "mycv",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "svetlana <zelenvasveta94@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "components-font-awesome": "^5.0.6",
+    "typed.js": "^2.0.9"
+  }
+}

@@ -1,0 +1,58 @@
+#exp {
+  position: relative;
+  min-height: 440px;
+  background: $light_bg;
+  width: 100%;
+
+  .container_exp {
+
+    .exp_side {
+      text-align: center;
+
+      h1 {
+        font-size: 25px;
+        font-weight: 600;
+      }
+      h2 {
+        color: $section_header;
+        text-align: center;
+        font-size: 20px;
+
+        span {
+          background: $section_header;
+          height: 1px;
+          width: 20%;
+          display: inline-block;
+          vertical-align: middle;
+
+          &:first-child {
+            margin-right: 10px;
+          }
+
+          &:last-child {
+            margin-left: 10px;
+          }
+        }
+      }
+      p {
+        color: $section_header;
+        font-size: 18px;
+      }
+
+      ul {
+        color: $section_header;
+        list-style: circle;
+
+        li {
+          margin-bottom: 10px;
+        }
+      }
+
+    }
+    .img_side {
+      background: url(../img/annie-spratt-79272-unsplash.jpg) no-repeat center;
+      background-size: cover;
+      height: 100%;
+    }
+  }
+}

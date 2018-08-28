@@ -1,0 +1,62 @@
+.footer {
+  position: relative;
+  min-height: 460px;
+  background: url(../img/thomas-verbruggen-94814-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+  }
+
+  .container_contact {
+    z-index: 10;
+    margin-top: 50px;
+
+    .contact_div {
+      padding: 2em;
+      border-bottom: 1px ridge rgb(214, 212, 212);
+      background: #fff;
+      text-align: center;
+
+      i {
+        font-size: 25px;
+      }
+
+      h2 {
+        margin: 10px 0;
+      }
+      span {
+        margin-bottom: 1em;
+        font-size: 14px;
+        color: #999;
+
+        a {
+          color: inherit;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      &:hover i {
+        color: $main_color;
+      }
+    }
+  }
+
+  .container_copyright {
+    z-index: 10;
+    padding: 20px 0;
+    background-color: #222;
+    opacity: 0.9;
+    color: white;
+  }
+}

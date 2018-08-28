@@ -1,0 +1,43 @@
+#about {
+  position: relative;
+  min-height: 500px;
+  background: #4d4d4d;
+  width: 100%;
+
+  .container_about {
+
+    .img_side {
+      background: url(../img/sylvie-tittel-673967-unsplash.jpg) no-repeat center;
+      background-size: cover;
+      height: 100%;
+    }
+
+    .about_side {
+      color: white;
+      padding: 5px 30px;
+      line-height: 1.5em;
+
+      h2 {
+        font-size: 25px;
+      }
+
+      ul {
+        li {
+
+          a {
+            color: inherit;
+
+            &:hover {
+              text-decoration: none;
+              cursor: pointer;
+            }
+          }
+
+          &:hover {
+            color: $main_color;
+          }
+        }
+      }
+    }
+  }
+}

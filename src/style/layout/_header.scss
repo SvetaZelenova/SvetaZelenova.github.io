@@ -1,0 +1,59 @@
+.header {
+
+  .container_nav {
+
+    .logo {
+      margin: 0.5em 0 0.5em 0em;
+
+      a {
+        color: $main_color;
+        font-size: 1.9em;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .header_nav {
+
+      .nav_list {
+
+        li a {
+          margin: 0 12px;
+          color: #fff;
+          font-size: 1em;
+          text-decoration: none;
+          padding: 10px 0;
+          text-transform: uppercase;
+          position: relative;
+
+          &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            padding: 10px 0;
+            max-width: 0;
+            border-bottom: 3px solid $main_color;
+            color: $main_color;
+            content: attr(data-hover);
+            transition: max-width 0.5s;
+          }
+          &:hover::before {
+            max-width: 100%;
+          }
+
+          &.active {
+            color: $main_color;
+          }
+        }
+      }
+    }
+  }
+}
+.header_collapse {
+  background: #000000;
+  box-shadow: 0 0 10px #222;
+  border-width: 0;
+}

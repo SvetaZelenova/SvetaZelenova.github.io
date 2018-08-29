@@ -1,3 +1,16 @@
+@media (max-width: 576px) {
+  body {
+    #home {
+      .container_about {
+        .welcome_text {
+          h1 {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
+}
 #home {
   position: relative;
   min-height: 460px;
@@ -19,7 +32,6 @@
   .container_about {
 
     .welcome_text {
-      min-width: 300px;
       font-size: 24px;
       color: #fff;
       border-top: 5px solid #fff;
@@ -50,7 +62,7 @@
         background: #fff;
       }
       h1 {
-        font-size: 10vw;
+        font-size: 85px;
         font-weight: 700;
         margin-bottom: 5px;
         color: $main_color;

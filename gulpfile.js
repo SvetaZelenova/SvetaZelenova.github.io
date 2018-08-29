@@ -47,6 +47,7 @@ gulp.task('webserver', function server() {
 gulp.task('js:build', function() {
 	return gulp.src(path.src.js)
 		.pipe(sourcemaps.init())
+		.pipe(uglify())
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest(path.build.js))
 		.pipe(reload({stream: true}))	

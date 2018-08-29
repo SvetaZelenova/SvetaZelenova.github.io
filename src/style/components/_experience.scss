@@ -1,3 +1,10 @@
+@media (max-width: 768px) {
+  .container_exp {
+    .img_side {
+      display: none;
+    }
+  }
+}
 #exp {
   position: relative;
   min-height: 440px;

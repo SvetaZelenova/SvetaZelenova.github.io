@@ -18,7 +18,7 @@
 
   .container_education {
     z-index: 10;
-    height: 270px;
+    min-height: 270px;
 
     .education_item {
       color: white;
@@ -27,6 +27,9 @@
       padding: 15px;
       border-radius: 10px;
 
+      &:first-child {
+        margin-bottom: 25px;
+      }
       .education_item_content {
         h2 {
           font-weight: 700;

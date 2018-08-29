@@ -1,3 +1,26 @@
+@media (max-width: 768px) {
+  #about {
+    .container_about {
+      .img_side {
+        display: none;
+      }
+      .about_side {
+        font-weight: 600;
+        background: url(../img/sylvie-tittel-673967-unsplash.jpg) no-repeat center;
+        background-size: cover;
+        height: 100%;
+
+        ul {
+           li {
+             i {
+               color: $main_color;
+             }
+           }
+        }
+      }
+    }
+  }
+}
 #about {
   position: relative;
   min-height: 500px;

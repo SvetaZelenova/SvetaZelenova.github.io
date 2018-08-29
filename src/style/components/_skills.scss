@@ -1,3 +1,15 @@
+@media (max-width: 768px) {
+  .container_skills {
+
+    .container_content {
+      flex-direction: column;
+
+      .progress_col {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
 #skills {
   position: relative;
   min-height: 440px;
@@ -5,7 +17,7 @@
   width: 100%;
 
   .container_skills {
-    height: 300px;
+    min-height: 300px;
 
     h2 {
       color: $section_header;

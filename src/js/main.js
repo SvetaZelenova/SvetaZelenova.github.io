@@ -8,7 +8,7 @@ $(document).ready(function(){
     var typed = new Typed(".typed_string", options);
 
     $(window).on('scroll', function() {
-        if ($(".header").offset().top > 100) {
+        if ($(".header").offset().top > 50) {
             $(".fixed-top").addClass("header_collapse");
         } else {
             $(".fixed-top").removeClass("header_collapse");

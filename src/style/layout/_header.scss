@@ -1,23 +1,35 @@
 .header {
 
   .container_nav {
+    flex-direction: row;
 
     .logo {
-      margin: 0.5em 0 0.5em 0em;
+      margin: 0.5em 0;
 
       a {
         color: $main_color;
         font-size: 1.9em;
+        font-weight: 600;
 
         &:hover {
           text-decoration: none;
         }
       }
     }
+    .nav-toggler {
+      display: none;
+      margin: 0.5em 0;
+
+      i {
+        color: $main_color;
+        font-size: 1.9em;
+      }
+    }
 
     .header_nav {
 
       .nav_list {
+        flex-direction: row;
 
         li a {
           margin: 0 12px;
@@ -31,7 +43,6 @@
           &::before {
             position: absolute;
             top: 0;
-            left: 0;
             overflow: hidden;
             padding: 10px 0;
             max-width: 0;
@@ -56,4 +67,34 @@
   background: #000000;
   box-shadow: 0 0 10px #222;
   border-width: 0;
+}
+@media (max-width: 768px) {
+  .header .container_nav {
+    flex-direction: column;
+
+    .main {
+      width: 100%;
+      justify-content: space-between;
+
+      .nav-toggler {
+        display: block;
+      }
+    }
+
+    .header_nav {
+      display: none;
+
+      &.navbar-show {
+        display: block;
+
+        .nav_list {
+          flex-direction: column;
+
+          li.nav-item {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }

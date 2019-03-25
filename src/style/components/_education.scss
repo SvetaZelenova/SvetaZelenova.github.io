@@ -26,6 +26,7 @@
       opacity: 0.7;
       padding: 15px;
       border-radius: 10px;
+      flex-direction: row;
 
       &:first-child {
         margin-bottom: 25px;
@@ -40,6 +41,21 @@
 
       .education_item_period {
         color: $main_color;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  #education {
+    .container_education {
+      width: 100%;
+      .education_item {
+        flex-direction: column;
+
+        .education_item_content {
+          margin-bottom: 10px;
+        }
       }
     }
   }

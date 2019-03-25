@@ -1,15 +1,3 @@
-@media (max-width: 768px) {
-  .container_skills {
-
-    .container_content {
-      flex-direction: column;
-
-      .progress_col {
-        margin-bottom: 20px;
-      }
-    }
-  }
-}
 #skills {
   position: relative;
   min-height: 440px;
@@ -103,10 +91,101 @@
 
             .progress-bar {
               background: $main_color;
+
+              &.html {
+                width: 50%;
+                animation: html 2s;
+              }
+              &.css {
+                width: 39%;
+                animation: css 2s;
+              }
+              &.js {
+                width: 35%;
+                animation: js 2s;
+              }
+              &.sass {
+                width: 30%;
+                animation: sass 2s;
+              }
+              &.angular {
+                width: 30%;
+                animation: angular 2s;
+              }
+              &.vue {
+                width: 15%;
+                animation: vue 2s;
+              }
+              
+              @keyframes html {
+                0%{
+                  width: 0;
+                }
+                100%{
+                  width: 50%;
+                }
+              }
+              @keyframes css {
+                0%{
+                  width: 0;
+                }
+                100%{
+                  width: 39%;
+                }
+              }
+              @keyframes js {
+                0%{
+                  width: 0;
+                }
+                100%{
+                  width: 35%;
+                }
+              }
+              @keyframes sass {
+                0%{
+                  width: 0;
+                }
+                100%{
+                  width: 30%;
+                }
+              }
+              @keyframes angular {
+                0%{
+                  width: 0;
+                }
+                100%{
+                  width: 30%;
+                }
+              }
+              @keyframes vue {
+                0%{
+                  width: 0;
+                }
+                100%{
+                  width: 15%;
+                }
+              }
             }
           }
         }
       }
     }
+  }
+}
+@media (max-width: 768px) {
+  .container_skills {
+
+    .container_content {
+      flex-direction: column;
+
+      .progress_col {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  section .container.container_skills {
+    width: 100%;
   }
 }

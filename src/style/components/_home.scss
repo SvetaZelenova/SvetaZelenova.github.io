@@ -1,16 +1,3 @@
-@media (max-width: 576px) {
-  body {
-    #home {
-      .container_about {
-        .welcome_text {
-          h1 {
-            font-size: 35px;
-          }
-        }
-      }
-    }
-  }
-}
 #home {
   position: relative;
   min-height: 460px;
@@ -105,4 +92,32 @@
       }
     }
   }
+}
+@media (max-width: 767px) {
+  #home {
+    .container_about {
+      .welcome_text:after,
+      .welcome_text:before {
+        width: 30%;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+    #home {
+      .container_about {
+        .welcome_text {
+          height: 230px;
+
+          &:after,
+          &:before {
+            width: 20%;
+          }
+
+          h1 {
+            font-size: 35px;
+          }
+        }
+      }
+    }
 }
